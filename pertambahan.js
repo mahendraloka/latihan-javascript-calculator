@@ -4,10 +4,11 @@ function hitungPertambahan(){
 
     if(angka1 === "" || angka2 === ""){
         alert("Silahkan masukkan angka terlebih dahulu");
-
         return;
     }
 
-    const hasil = parseInt(angka1) + parseInt(angka2);
+    const hasil = parseFloat(angka1) + parseFloat(angka2);
     document.getElementById("hasil").textContent = "Hasil: " + hasil;
 }
+
+document.getElementById("hitungButton").addEventListener("click", hitungPertambahan);
